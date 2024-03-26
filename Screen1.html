@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="outer-Box">
+       
+        <div class="heading" >
+            Driving license Renewal
+        </div>
+        <div class="inner-Box">
+            <div id="progress-bar"> 
+                <div id="progress"></div>
+            </div>
+            <header class="heading1">
+                <h1>Let's get started!</h1>
+                <p>Add your details(As per your registered records)</p>
+            </header>
+            <main class="content">
+                <form action="#">
+                    <p>
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name" placeholder="Enter Name"  oninput="updateProgeress(1)">
+                    </p>
+                    <p>
+                         <label for="DLicesne">Nature Of Driving License </label> 
+                        <div class="forRadio">
+                        <input type="radio" name="Vehicle" value="Private" oninput="updateProgeress(2)" >Private
+                        <input type="radio"  name="Vehicle" value="Commercial" oninput="updateProgeress(2)" >Commercial  
+                        </div>
+                    </p>
+                    <p>
+                        <label for="Fullname">Type Of Previous Driving License</label>
+
+                        <div class="forRadio">
+                        <input type="radio" name="License" value="PaperLicense" oninput="updateProgeress(3)">Paper Driving License
+                        <input type="radio" name="License" value="SmartLicense" oninput="updateProgeress(3)" >Smart Driving License
+                    </div>
+                    </p>
+                    <p>
+                        <button type="" onclick="move()" id="Backbtn">Back</button>
+                    </p>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

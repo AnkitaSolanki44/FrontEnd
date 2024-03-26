@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="outer-Box">
+        <div class="heading" >
+            Driving license Renewal
+        </div>
+        <div class="inner-Box">
+            <div id="progress-bar"> 
+                <div id="progress"></div>
+            </div>
+            <header class="heading1">
+                <h1>Let's get started!</h1>
+                <p>Add your details(As per your registered records)</p>
+            </header>
+            <main class="content">
+                <form action="#">
+                    <p>
+                        <label for="Name">Place where Driving license eas issued</label>
+                        <input type="text" id="Name" placeholder="Enter Place Name" oninput="myProgeress(1)">
+                    </p>
+                    <p>
+                        <label for="Name">Issued Year of  License</label>
+                       <select class="dropdown" name="" id="selectBox1" onchange="myProgeress(2)">
+                        <option value="#" disabled selected>Choose Issued Year of License</option>
+                        <option value="30">2020</option>
+                        <option value="30">2021</option>
+                        <option value="30">2022</option>
+                        <option value="30">2023</option>
+                        <option value="30">2024</option>
+                       </select>
+                    </p>
+                    <p >
+                        <label for="Fullname">Type Of Previous Driving License</label>
+                        <select class="dropdown" name="" id="selectBox2" onchange="myProgeress(3)" >
+                            <option value="#" disabled selected>Choose Expired Year of License</option>
+                            <option value="30">2020</option>
+                            <option value="30">2021</option>
+                            <option value="30">2022</option>
+                            <option value="30">2023</option>
+                            <option value="30">2024</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button type="back" id="Backbtn">Back</button>
+                    </p>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
